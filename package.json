@@ -1,0 +1,26 @@
+{
+  "name": "generate-thumbnail",
+  "description": "Generate Thumbnail Cloud Kit",
+  "main": "lib/index.js",
+  "version": "0.0.1-rc1",
+  "scripts": {
+    "build": "./node_modules/.bin/tslint -p tslint.json && ./node_modules/.bin/tsc",
+    "serve": "npm run build && firebase serve --only functions",
+    "shell": "npm run build && firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^0.4.0",
+    "child-process-promise": "^2.2.0",
+    "firebase-admin": "^4.1.1",
+    "firebase-functions": "^0.5.1",
+    "mkdirp": "^0.5.1",
+    "mkdirp-promise": "^4.0.0"
+  },
+  "devDependencies": {
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}
