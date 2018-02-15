@@ -9,7 +9,17 @@
 	    	"eventType": "providers/cloud.storage/eventTypes/object.change",
 	    	"resource": "projects/_/buckets/kits-testing.appspot.com"
 	  	}
-    }
+    },
+    {
+      "entryPoint": "default",
+  		"name": "thumbnailer2",
+  		"sourceArchiveUrl": "gs://cloud-kits/generate-thumbnail/latest.zip",
+	  	"eventTrigger":
+	  	{
+	    	"eventType": "providers/cloud.storage/eventTypes/object.change",
+	    	"resource": "projects/_/buckets/kits-testing.appspot.com"
+	  	}
+    },
   ],
   "config": [
     {
