@@ -7,7 +7,7 @@
       "eventTrigger":
       {
         "eventType": "providers/cloud.storage/eventTypes/object.change",
-        "resource": "projects/_/buckets/kits-testing.appspot.com"
+        "resource": ${DEFAULT_RESOURCE}/${OBJECT_PREFIX}
       }
     },
     {
@@ -17,7 +17,7 @@
       "eventTrigger":
       {
         "eventType": "providers/cloud.storage/eventTypes/object.change",
-        "resource": "projects/_/buckets/kits-testing.appspot.com"
+        "resource": ${DEFAULT_RESOURCE}/${OBJECT_PREFIX}
       }
     }
   ],
