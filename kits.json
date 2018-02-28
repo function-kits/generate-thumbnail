@@ -1,43 +1,32 @@
 {
-  "functions": [
+  "functions":
     {
       "entryPoint": "default",
-      "name": "thumbnailer",
+      "name": "generateThumbnail",
       "sourceArchiveUrl": "gs://cloud-kits/generate-thumbnail/latest.zip",
       "eventTrigger":
       {
         "eventType": "providers/cloud.storage/eventTypes/object.change",
-        "resource": "projects/_/buckets/kits-testing.appspot.com"
+        "resource": "${DEFAULT_RESOURCE}/${OBJECT_PREFIX}"
       }
     },
-    {
-      "entryPoint": "default",
-      "name": "thumbnailer2",
-      "sourceArchiveUrl": "gs://cloud-kits/generate-thumbnail/latest.zip",
-      "eventTrigger":
-      {
-        "eventType": "providers/cloud.storage/eventTypes/object.change",
-        "resource": "projects/_/buckets/kits-testing.appspot.com"
-      }
-    }
-  ],
   "config": [
     {
       "name": "MAX_HEIGHT",
       "type": "number",
-      "label": "Thumbnail Max Height (px)",
+      "label": "What is the thumbnail Max Height (px)?",
       "default": 300
     },
     {
       "name": "MAX_WIDTH",
       "type": "number",
-      "label": "Thumbnail Max Width (px)",
+      "label": "What is the thumbnail Max Width (px)?",
       "default": 300
     },
     {
       "name": "OBJECT_PREFIX",
       "type": "string",
-      "label": "Object prefix (e.g. images/)",
+      "label": "What subfolder should trigger the function? (e.g. images/)",
       "default": null
     }
   ]
