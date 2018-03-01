@@ -14,13 +14,13 @@
     {
       "name": "MAX_HEIGHT",
       "type": "number",
-      "label": "What is the thumbnail Max Height (px)?",
+      "label": "What is the max height of the thumbnail (px)?",
       "default": 300
     },
     {
       "name": "MAX_WIDTH",
       "type": "number",
-      "label": "What is the thumbnail Max Width (px)?",
+      "label": "What is the max width of the thumbnail (px)?",
       "default": 300
     },
     {
