@@ -6,8 +6,7 @@
       "sourceArchiveUrl": "gs://cloud-kits/generate-thumbnail/latest.zip",
       "eventTrigger":
       {
-        "eventType": "providers/cloud.storage/eventTypes/object.change",
-        "resource": "projects/_/buckets/kits-testing.appspot.com"
+        "eventType": "providers/cloud.storage/eventTypes/object.change"
       }
     },
   "config": [
