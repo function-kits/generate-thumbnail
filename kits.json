@@ -27,7 +27,7 @@
       "name": "OBJECT_PREFIX",
       "type": "string",
       "label": "What subfolder should trigger the function? (e.g. images/)",
-      "default": null
+      "default": "/"
     }
   ]
 }
