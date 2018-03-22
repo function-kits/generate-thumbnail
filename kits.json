@@ -19,8 +19,7 @@
     {
       "name": "MAX_WIDTH",
       "type": "number",
-      "label": "What is the max width of the thumbnail (px)?",
-      "default": 300
+      "label": "What is the max width of the thumbnail (px)?"
     },
     {
       "name": "OBJECT_PREFIX",
