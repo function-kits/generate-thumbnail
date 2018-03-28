@@ -1,5 +1,5 @@
 {
-  "functions":
+  "functions": [
     {
       "entryPoint": "default",
       "name": "generateThumbnail",
@@ -9,6 +9,16 @@
         "eventType": "providers/cloud.storage/eventTypes/object.change"
       }
     },
+    {
+      "entryPoint": "default",
+      "name": "generateThumbnail2",
+      "sourceArchiveUrl": "gs://cloud-kits/generate-thumbnail/latest.zip",
+      "eventTrigger":
+      {
+        "eventType": "providers/cloud.storage/eventTypes/object.change"
+      }
+    },
+    ],
   "config": [
     {
       "name": "MAX_HEIGHT",
