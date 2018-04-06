@@ -3,16 +3,6 @@
     {
       "entryPoint": "default",
       "name": "generateThumbnail",
-      "sourceArchiveUrl": "gs://cloud-kits/generate-thumbnail/latest.zip",
-      "eventTrigger":
-      {
-        "eventType": "providers/cloud.storage/eventTypes/object.change"
-      }
-    },
-    {
-      "entryPoint": "default",
-      "name": "generateThumbnail2",
-      "sourceArchiveUrl": "gs://cloud-kits/generate-thumbnail/latest.zip",
       "eventTrigger":
       {
         "eventType": "providers/cloud.storage/eventTypes/object.change"
@@ -29,7 +19,8 @@
     {
       "name": "MAX_WIDTH",
       "type": "number",
-      "label": "What is the max width of the thumbnail (px)?"
+      "label": "What is the max width of the thumbnail (px)?",
+      "default": 300
     },
     {
       "name": "OBJECT_PREFIX",
